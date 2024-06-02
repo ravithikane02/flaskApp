@@ -12,7 +12,7 @@ app.config['MYSQL_DB'] = os.environ.get('MYSQL_DB', 'default_db')
 
 # Initialize MySQL
 mysql = MySQL(app)
-
+# this is sample
 @app.route('/')
 def hello():
     cur = mysql.connection.cursor()
